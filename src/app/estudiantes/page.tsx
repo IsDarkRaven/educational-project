@@ -73,7 +73,7 @@ const studentsData: StudentType[] = [
 ];
 
 //TODO: Se toma de la base de datos
-export const grades: GradeType[] = [
+const grades: GradeType[] = [
   { gradeId: 1, name: "Transición", level: "Preescolar" },
   { gradeId: 2, name: "Grado 1", level: "Primero" },
   { gradeId: 3, name: "Grado 2", level: "Segundo" },
@@ -82,7 +82,7 @@ export const grades: GradeType[] = [
   { gradeId: 6, name: "Grado 5", level: "Quinto" },
 ];
 
-export default function ExpedientesEstudiantes() {
+export default function Page() {
   const [searchTerm, setSearchTerm] = useState("");
   const [students, setStudents] = useState<StudentType[]>(studentsData);
   const [isEditingStudent, setIsEditingStudent] = useState(false);

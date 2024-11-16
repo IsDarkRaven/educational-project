@@ -10,7 +10,9 @@ import {
 
 export const ColorThemeContext = createContext({
   colorTheme: "default",
-  setColorTheme: (theme: string) => {},
+  setColorTheme: (theme: string) => {
+    console.log("setColorTheme", theme);
+  },
 });
 
 export function ColorThemeProvider({ children }: { children: ReactNode }) {

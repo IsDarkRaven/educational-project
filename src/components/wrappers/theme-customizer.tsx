@@ -20,6 +20,9 @@ export function ThemeCustomizer() {
   const { theme, setTheme } = useTheme();
   const { colorTheme, setColorTheme } = useColorTheme();
 
+  console.log("theme", theme);
+  console.log("colorTheme", colorTheme);
+
   return (
     <div className="space-y-4">
       <div className="flex flex-col sm:flex-row items-start gap-4">
